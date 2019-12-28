@@ -12,14 +12,25 @@
 
   gtag('config', 'UA-154854225-1');
 </script>
+  
+<script>
+  function send(){
+    gtag("event", "觀看影片", {
+	  "event_category": "首頁影片",
+	  "event_label": "宣傳影片一",
+    "value":5
+    });
+    
+    alert('事件送出');
+  }
+</script>
+
 </head>
 
 <body>
-<h3>website for ga</h3>
-<div>hellow google analysis</div>
-  
-  
- 
+  <h3>website for ga</h3>
+  <div>hellow google analysis</div>
+  <button onclick='send();'>點我</button>
 
 </body>
 </html>
