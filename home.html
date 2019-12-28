@@ -23,6 +23,15 @@
     
     alert('事件送出');
   }
+	  function send2(){
+    gtag("event", "觀看影片", {
+	  "event_category": "首頁影片",
+	  "event_label": "宣傳影片二",
+    "value":5
+    });
+    
+    alert('事件送出');
+  }
 </script>
 
 </head>
@@ -31,6 +40,6 @@
   <h3>website for ga</h3>
   <div>hellow google analysis</div>
   <button onclick="send();">點我</button>
-
+   <button onclick="send2();">點我二</button>
 </body>
 </html>
